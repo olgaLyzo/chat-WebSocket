@@ -1,3 +1,14 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@import "variables.scss";
+
 .chat_block {
   display: flex;
   justify-content: space-around;
@@ -8,39 +19,31 @@
   margin: 0 5px 0;
 }
 .write_mess {
+	@include main-font;
   width: 200px;
   height: 35px;
   border: 5px solid #b7e1fc;
-  font-family: "Roboto", serif;
-  font-size: 16px;
-  font-weight: normal;
-  color: black;
+  
   margin: 10px 0 10px;
   padding: 3px;
 }
 .btn_sendMsg {
+	@include main-font;
   width: 115px;
   height: 50px;
   background-color: #b7e1fc;
   padding: 0;
-  font-family: "Roboto", serif;
-  font-size: 16px;
-  font-weight: normal;
-  color: black;
   cursor: pointer;
   margin: 10px 0 10px;
   border: none;
 }
 
 .btn_geoloc {
+	@include main-font;
   width: 115px;
   height: 50px;
   background-color: #b7e1fc;
   padding: 0;
-  font-family: "Roboto", serif;
-  font-size: 16px;
-  font-weight: normal;
-  color: black;
   cursor: pointer;
   margin: 10px 0 10px;
   border: none;
@@ -69,12 +72,10 @@
 }
 
 .results_block .recievedMessage {
+	@include main-font;
   align-self: flex-end;
   border: 5px solid #b7e1fc;
   border-radius: 25%;
-  font-family: "Roboto", serif;
-  font-size: 16px;
-  font-weight: normal;
   color: #52aeea;
   padding: 5px;
 }
@@ -82,13 +83,10 @@
   text-decoration: none;
 }
 .results_block .sentMessage {
+	@include main-font;
   align-self: flex-start;
   border: 5px solid #b7e1fc;
   border-radius: 25%;
-  font-family: "Roboto", serif;
-  font-size: 16px;
-  font-weight: normal;
-  color: black;
   padding: 5px;
 }
 .geolocation {

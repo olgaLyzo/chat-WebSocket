@@ -27,13 +27,14 @@ import '../scss/style.scss'
    } 
 
    function sendMessage(){
-     if(!input.value)return;
+     if(!input.value){
+			alert("Please enter a message");
+			return;
+		 };
      websocket.send(input.value);
      writeToChat(input.value, false);
      input.value = "";
    }
-
-   
 
    function getLocation() {
      if ("geolocation" in navigator) {
