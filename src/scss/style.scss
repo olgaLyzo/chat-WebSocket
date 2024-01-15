@@ -1,0 +1,98 @@
+.chat_block {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  height: 72px;
+  border: 5px solid #b7e1fc;
+  gap: 5px;
+  margin: 0 5px 0;
+}
+.write_mess {
+  width: 200px;
+  height: 35px;
+  border: 5px solid #b7e1fc;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+  margin: 10px 0 10px;
+  padding: 3px;
+}
+.btn_sendMsg {
+  width: 115px;
+  height: 50px;
+  background-color: #b7e1fc;
+  padding: 0;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+  cursor: pointer;
+  margin: 10px 0 10px;
+  border: none;
+}
+
+.btn_geoloc {
+  width: 115px;
+  height: 50px;
+  background-color: #b7e1fc;
+  padding: 0;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+  cursor: pointer;
+  margin: 10px 0 10px;
+  border: none;
+}
+
+.results_block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 10px;
+  width: 480px;
+  min-height: 100px;
+  border: 5px solid #b7e1fc;
+  margin: 0 5px 0;
+  border-top: none;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.results_block > div {
+  max-width: 80%;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.results_block .recievedMessage {
+  align-self: flex-end;
+  border: 5px solid #b7e1fc;
+  border-radius: 25%;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #52aeea;
+  padding: 5px;
+}
+.results_block .recievedMessage a {
+  text-decoration: none;
+}
+.results_block .sentMessage {
+  align-self: flex-start;
+  border: 5px solid #b7e1fc;
+  border-radius: 25%;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+  padding: 5px;
+}
+.geolocation {
+  border: 5px solid #b7e1fc;
+  border-radius: 35%;
+  color: #b7e1fc;
+}
