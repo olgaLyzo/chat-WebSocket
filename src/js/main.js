@@ -9,12 +9,13 @@ import '../scss/style.scss'
    const chatOutput = document.getElementById("chatOutput");
    const wbsURI = "wss://echo-ws-service.herokuapp.com";
    const websocket = new WebSocket(wbsURI);
-   websocket.onopen = (event)=>{
+
+   websocket.onopen = (event)=>
      console.log("Connected");
-   }; 
-   websocket.onmessage = (event)=>{
+
+   websocket.onmessage = (event)=>
      writeToChat(event.data, true);
-   };
+   
    websocket.onerror = (error)=>{
      alert("Houston we have a problem with connection!");
      console.log("Error:", error);
@@ -22,7 +23,7 @@ import '../scss/style.scss'
   
    function writeToChat(message, isRecieved){
      let messageHTML=`
-     	<div class="${isRecieved?"recievedMessage":"sentMessage"}">${message}</div>`;
+     	<div class="${isRecieved ? "recievedMessage" : "sentMessage"}">${message}</div>`;
      chatOutput.innerHTML += messageHTML;  
    } 
 
